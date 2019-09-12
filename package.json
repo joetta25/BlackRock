@@ -1,0 +1,28 @@
+{
+  "name": "blackrock",
+  "version": "1.0.0",
+  "description": "TaskHandler",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joetta25/BlackRock.git"
+  },
+  "author": "Joetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joetta25/BlackRock/issues"
+  },
+  "homepage": "https://github.com/joetta25/BlackRock#readme",
+  "dependencies": {
+    "create-react-app": "^3.1.1",
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.3",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
