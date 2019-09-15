@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "blackrockadmin",
-    "password": "blackrockadmin1234",
+    "password": "admin1234",
     "database": "taskmasterdb",
     "host": "taskmasterdb.cepyxa3at9gn.us-east-1.rds.amazonaws.com",
     "dialect": "postgres",
