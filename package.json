@@ -27,6 +27,8 @@
     "express": "^4.17.1",
     "express-session": "^1.16.2",
     "parcel-bundler": "^1.12.3",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
     "redux": "^4.0.4",
     "sequelize": "^5.18.4",
     "sequelize-cli": "^5.5.1"
