@@ -1,3 +1,5 @@
+
+
 {
   "development": {
     "username": "blackrockadmin",
@@ -6,14 +8,6 @@
     "host": "taskmasterdb.cepyxa3at9gn.us-east-1.rds.amazonaws.com",
     "dialect": "postgres",
     "port": "5432",
-    "operatorsAliases": false
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
