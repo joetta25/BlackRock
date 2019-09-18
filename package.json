@@ -4,7 +4,7 @@
   "description": "TaskHandler",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "node index.js",
     "prod": "parcel build src/index.html"
   },
   "repository": {
@@ -27,7 +27,7 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "nodemon": "^1.19.2",
+    "lodash": "^4.17.15",
     "parcel-bundler": "^1.12.3",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",

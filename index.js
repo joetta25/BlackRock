@@ -2,8 +2,8 @@
 
 // import express from 'express'
 var express = require('express');
-var path = require('path');
-var ejs = require('ejs');
+var path =  require('path');
+var ejs =  require('ejs');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var bcrypt = require('bcrypt');
@@ -37,15 +37,16 @@ taskStore.sync();
 //****************** SETTING UP THE MIDDLEWARE AND EJS/STATIC****************************** */
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "/src/")));
+app.use(express.static(path.join(__dirname,"/src/")));
 
 //TODO: Verify connectivity through express
-app.get('/', (req, res) => { res.send('Hello World from express app') })
-app.get('/all', (req, res) => {
+app.get('/', (req, res) => { res.send('Hello World from express app')})
+app.get('/all', (req, res) => { 
     //We still need to get a sample query here
     db.task.findAll();
 })
 //todo server port
 app.listen(process.env.PORT || 3000, function () {
     console.log("Server running on port 3000");
-});
+  });
+  
