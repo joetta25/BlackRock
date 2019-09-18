@@ -1,4 +1,3 @@
-
 #select the node version of our application. The 'slim' The type of image. Since this is 'slim',
 #it only downloads the minimum requirements for the OS to run this version of node that we have selected
 
