@@ -2,6 +2,8 @@
 
 BlackRock Task project.
 
+A FULL STACK APPLICATION THAT GIVES USERS THE ABILITY TO CREATE TASK!
+
 ## Getting Started - Initial Set up
 
 These instructions will get you a copy of the project up and running on your local machine.
