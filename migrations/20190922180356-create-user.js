@@ -1,38 +1,20 @@
-'use strict';
+"use strict";
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('tasks', {
+    return queryInterface.createTable("Users", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id: {
-        type: Sequelize.UUID
-      },
-      name: {
+      firstName: {
         type: Sequelize.STRING
       },
-      description: {
+      lastName: {
         type: Sequelize.STRING
       },
-      priority: {
-        type: Sequelize.INTEGER
-      },
-      time: {
-        type: Sequelize.DATE
-      },
-      startTime: {
-        type: Sequelize.DATE
-      },
-      endTime: {
-        type: Sequelize.DATE
-      },
-      createdTime: {
-        type: Sequelize.DATE
-      },
-      status: {
+      email: {
         type: Sequelize.STRING
       },
       createdAt: {
@@ -42,10 +24,13 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      userId: {
+        type: Sequelize.INTEGER
       }
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('tasks');
+    return queryInterface.dropTable("Users");
   }
 };
