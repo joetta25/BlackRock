@@ -14,21 +14,33 @@ See project notes and requirements in Google Doc.
 ### Installing
 
 1. Clone repository
-2. From project root run
+2. To run backend server from project root run
 ```
 npm install
 ```
 ```
 npm run dev
 ```
-3. Project will now be running on localhost on specified port.
+3. Project will now be running on localhost on specified port. likely http://localhost:1234
+4. To run front end (create react app) navigate to blackrock directory (we are no longer using src directory), install dependencies, and start project.
+```
+cd blackrock
+```
+```
+npm install
+```
+```
+npm start
+```
+5. Front end app will be running on port 3000. http://localhost:3000/
+6.  Ideally both front and backend should be able to run at the same time for local development purposes.
 
 
 ## Deployment
 
 1. Ensure Docker is installed and Running
 2. Create a Docker image with an identifiable tag/title
-``` 
+```
 docker build -t BlackRock:v1 .
 
 # or
@@ -71,4 +83,3 @@ docker stop
 * [Redux](https://redux.js.org/) - state container for JavaScript Apps
 * [ExpressJS](https://expressjs.com/) - minimalist web framework for NodeJS
 * [Docker](https://www.docker.com/) - securely build, share, and run modern applications anywhere
-
