@@ -12,7 +12,7 @@ const db = require('./src/models');
 var crypto = require('crypto');
 var AWS = require('aws-sdk');
 //! body-parser extract the entire body portion of an incoming request and exposes it on req.body aka middleware
-// these are the global variables 
+// these are the global variables
 
 const jsonParser = bodyParser.json()
 const app = express()
@@ -41,7 +41,7 @@ app.use(express.static(path.join(__dirname,"/src/")));
 
 //TODO: Verify connectivity through express
 app.get('/', (req, res) => { res.send('Hello World from express app')})
-app.get('/all', (req, res) => { 
+app.get('/all', (req, res) => {
     //We still need to get a sample query here
     db.task.findAll();
 })
@@ -49,4 +49,3 @@ app.get('/all', (req, res) => {
 app.listen(process.env.PORT || 3000, function () {
     console.log("Server running on port 3000");
   });
-  
