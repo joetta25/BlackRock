@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/joetta25/BlackRock#readme",
   "dependencies": {
-    "aws-sdk": "^2.528.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "connect-session-sequelize": "^6.0.0",
